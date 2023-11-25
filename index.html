@@ -6,8 +6,49 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
      <script src="liff.js"></script>
-      <script src="liff.js"></script>
      <script src="index.js"></script>
+
+    <style>
+        #loading {
+            display: block;
+            text-align: center;
+            padding: 20px;
+        }
+        #content {
+            display: none;
+        }
+
+
+    .image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 80%; /* 画面に対して100%の幅にする */
+        height: auto; /* アスペクト比を保持して高さを自動調整 */
+    }
+
+        
+
+
+    .overlay-text {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+       
+        font-weight: bold;
+    }
+
+
+        
+    </style>
+
+
     
     <link rel="stylesheet" type="text/css" href="./public/card.css">
 </head>
