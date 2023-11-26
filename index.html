@@ -69,7 +69,13 @@
 
 
             
-            <p class="bottom1">現在のランク<span style="float: right;">シルバー</span></p>
+            <p class="bottom1">現在のランク<span style="float: right;">
+
+                <div id="name" class="content1">
+                    <div id="data-container"></div>
+                </div>
+                
+            </span></p>
         </div>
     </div>
 
@@ -94,7 +100,7 @@
 
             // IDトークンをGASに送信
             $.ajax({
-                url: 'https://script.google.com/macros/s/AKfycbx_KrPWddrfXLtBl-IOy8ICxzIr_TL0935ECz0BdmLZfeC3157w3V2Ygg_bR7qp4rIXhw/exec',
+                url: 'https://script.google.com/macros/s/AKfycbyUKKeHDJHr7UpVMMynHyyFd0kJCc4W8oDgAvSLNHULheyqVk1xIhlykX5AfHyqct2xFA/exec',
                 type: 'POST',
                 data: { idToken: idToken },
                 success: function (response) {
@@ -130,7 +136,9 @@
 
             const container = document.getElementById("data-container");
             const container2 = document.getElementById("data-container2");
+ const container2 = document.getElementById("data-container3");
 
+            
             const paragraph = document.createElement("p");
             paragraph.textContent = `${jsonData.name} 様`;
             container.appendChild(paragraph);
@@ -138,6 +146,11 @@
             const paragraph2 = document.createElement("p");
             paragraph2.textContent = `${jsonData.score} `;　// pt
             container2.appendChild(paragraph2);
+
+            const paragraph3 = document.createElement("p");
+            paragraph3.textContent = `${jsonData.rank} `;　//rank
+            container3.appendChild(paragraph3);
+            
         }
     </script>
 </body>
