@@ -34,7 +34,7 @@
 .content2 {
 	padding: 2vw;
 	color: #666;
-	text-align: right;
+	/* 要素の位置を固定する text-align: right; */
 
 }
 
