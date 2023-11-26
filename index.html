@@ -127,11 +127,17 @@
         function displayData(data) {
             const jsonData = JSON.parse(data);
 
+
             const container = document.getElementById("data-container");
+            const container2 = document.getElementById("data-container2");
 
             const paragraph = document.createElement("p");
             paragraph.textContent = `${jsonData.name} 様`;
             container.appendChild(paragraph);
+
+            const paragraph2 = document.createElement("p");
+            paragraph2.textContent = `${jsonData.score} `;　// pt
+            container2.appendChild(paragraph2);
         }
     </script>
 </body>
