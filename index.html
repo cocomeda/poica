@@ -40,10 +40,15 @@
         }
 
 
-        .rank_dat {
+    　　.rank_dat {
             text-align: center;
             display: flex;
             justify-content: space-between;
+            align-items: center; /* センタリングを追加 */
+        }
+      .rank_dat span {
+            display: inline-block;
+            line-height: 1;
         }
         
     </style>
@@ -74,12 +79,15 @@
 
             
 
-<div style="text-align: center;" class="bdy3">
-  <div style="display: inline-block;" class="content3">
-    <span id="point"><div id="data-container3"></div></span>
-  </div>
-  <span style="display: inline-block; line-height: 1;" class="bdy3">現在のランク</span>
-</div>
+
+    <div class="bdy3">
+        <div class="content3">
+            <span id="point"><div id="data-container3"></div></span>
+        </div>
+        <span>現在のランク</span>
+    </div>
+
+
 
             
 <p class="bottom1">
