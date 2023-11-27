@@ -2,7 +2,7 @@
 	width: 100%;
                   height: 90vw;
 	border-radius: 1vw;
-	background-color: #fff;
+	background-color: #f5fffa;
 	box-shadow: 0vw 2vw 3vw #ccc;
 
 
@@ -50,7 +50,7 @@
 
 .bottom1 {
 	border-radius: 0vw 0vw 1vw 1vw;
-                  font-size: 4vw;
+                  font-size: 14vw;
                  
 	padding: 1vw;
 	text-align: left;
